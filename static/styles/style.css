@@ -1,0 +1,252 @@
+body{
+    margin: 0;
+    font-family: Raleway","Helvetica","Arial""sans-serif;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+}
+
+.navbar{
+    height:calc(100vh - 40px);
+    background-image: url(	https://opencages.com.ua/_nuxt/img/homepage.0151b74.jpg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    padding: 0 20px;
+    background-attachment: fixed;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #0c3632;
+    position: absolute;
+    opacity: .75;
+    transition: all .25s ease;
+    top: 0;
+    left: 0;
+}
+
+.nav{
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: inherit;
+    list-style: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
+}
+
+.logo-img{
+    height: 50px; 
+   
+}
+
+.logo-list{
+    display: flex;
+    height: 100%;   
+}
+
+.nav-list{
+    display: flex;  
+}
+
+.nav-list li{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 0 10px; 
+}
+
+.nav-list-link{
+    position: relative;
+    transition: all .50s ease;
+}
+
+.nav-list-link::after{
+    content: "";
+    height: 2px;
+    width: 100%;
+    background-color: #17baaa;
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    transition: all .25s ease;
+    transform: scaleX(0);
+}
+
+.nav-list-link:hover{
+    color: #17baaa;
+}
+
+.nav-list-link:hover::after{
+    transform: scaleX(1);
+}
+
+.nav-list li:last-of-type a{
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    background-color: #dd3d53;
+    height: 30px;
+    padding: 0 10px;
+    border-radius: 3px;
+    transition: all .25s ease;    
+}
+
+.icon{
+    margin-left: 5px;
+}
+
+.nav-list li:last-of-type a:hover{
+    background-color: #c9233a;
+    color: #fff;
+}
+
+.nav-list li:last-of-type a svg{
+    width: 1em;
+    margin-right: 10px;
+}
+
+.nav-toggle{
+    font-size: 2rem;
+    color: white;
+}
+
+.burger-icon{
+    display: inline-block;
+    font-size: inherit;
+    height: 1em;
+    vertical-align: -0.125em;
+    cursor: pointer;
+}
+
+.header-content{
+    position: relative;
+    z-index: 1; 
+    width: 100%;
+    margin: auto 0;  
+}
+
+.header-content-title{
+    font-size: 56px;
+    color: white;
+    line-height: 84px;
+}
+
+.header-content-title-green{
+    color: #17baaa;
+}
+
+.header-content-btn{
+    background: #17baaa;
+    display: block;
+    align-items: center;
+    border: 0;
+    box-sizing: border-box;
+    display: inline-flex;
+    font-size: 14px;
+    font-size: .875rem;
+    font-weight: 700;
+    justify-content: center;
+    max-width: 100%;
+    min-height: 40px;
+    outline: none;
+    padding: 0 30px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all .25s ease;
+}
+
+.header-content-btn:hover{
+    background-color:#129185 ;
+}
+
+@media screen  and (min-width:992px)  {
+    .nav-toggle{
+        display: none;
+    }
+}
+
+@media screen  and (max-width:992px)  {
+    .nav-list{
+        display: none;
+    }
+}
+
+.main{
+    background-color: red;
+    margin: 0;
+    padding: 0;
+    background-image: url(https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832_640.jpg);
+    background-position: 50%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+    
+
+.first-section{
+    align-items: center;
+    display: flex;
+}
+.info{
+    color: white;
+    width:300px ;
+    height: 500px;
+    padding: 100px 20px;
+    font-size: 1.40rem;
+    font-family: "Raleway","Helvetica","Arial",sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+span{
+    font-size: 20px;
+}
+
+.name{
+    border-bottom: 3px solid #17baaa;
+    width: 165px;
+
+}
+p{
+    font-size: 28px;
+}
+
+.sumbit{
+    padding-top: 30px;
+}
+
+.sumbit-btn{
+    align-items: center;
+    border: 0;
+    box-sizing: border-box;
+    display: inline-flex;
+    font-size: 14px;
+    font-size: .875rem;
+    font-weight: 700;
+    justify-content: center;
+    max-width: 100%;
+    min-height: 40px;
+    outline: none;
+    padding: 0 30px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all .25s ease;
+    color: white;
+    text-decoration: none;
+    background-color: #17baaa;
+}
